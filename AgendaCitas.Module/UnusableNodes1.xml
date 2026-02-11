@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Negocios_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Negocios">
+              <LayoutGroup Id="Negocios_col1">
+                <LayoutGroup Id="Autob2cc90a9-f4d5-49f4-a8ce-f7881d6bed59">
+                  <LayoutItem Id="Ambito" ViewItem="Ambito" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="ClinicaA_01_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="ClinicaA_01" RelativeSize="100" Caption="ClinicaA_01">
+              <LayoutGroup Id="Auto5f8edfdb-3fca-4a8b-a6a7-e33cd6334044" ShowCaption="False" Caption="Auto5f8edfdb-3fca-4a8b-a6a7-e33cd6334044(4)" Direction="Vertical" Index="0" RelativeSize="99.713876967095857">
+                <LayoutGroup Id="Autoa3db71c6-2d3f-4bc1-b647-3dda771ceb8d" ShowCaption="False" Caption="Autoa3db71c6-2d3f-4bc1-b647-3dda771ceb8d(5)" Direction="Horizontal" Index="0" RelativeSize="13.135593220338983">
+                  <LayoutItem Id="Oid" ViewItem="Oid" Index="0" RelativeSize="25.538020086083215" />
+                  <LayoutItem Id="Dni" ViewItem="Dni" Index="1" RelativeSize="24.820659971305595" />
+                  <LayoutItem Id="Nombre" ViewItem="Nombre" Index="2" RelativeSize="24.820659971305595" />
+                  <LayoutGroup Id="Auto4fabb7dd-f227-4c49-89c2-4e11dc16e3a8" ShowCaption="False" Caption="Auto4fabb7dd-f227-4c49-89c2-4e11dc16e3a8(7)" Index="3" RelativeSize="24.820659971305595">
+                    <LayoutItem Id="Apellido1" ViewItem="Apellido1" Index="0" RelativeSize="51.612903225806448" />
+                    <LayoutItem Id="Apellido2" ViewItem="Apellido2" Index="1" RelativeSize="48.387096774193552" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="Autob7f7d864-80c5-4e8c-8d50-3f59036d918b" ShowCaption="False" Caption="Autob7f7d864-80c5-4e8c-8d50-3f59036d918b(11)" Direction="Horizontal" Index="1" RelativeSize="12.711864406779661">
+                  <LayoutItem Id="FechaNacimiento" ViewItem="FechaNacimiento" Index="0" RelativeSize="25.538020086083215" />
+                  <LayoutItem Id="Visitas" ViewItem="Visitas" Index="1" RelativeSize="24.820659971305595" />
+                  <LayoutGroup Id="Autod3dd2b02-35e3-46b2-80d0-601ade90f770" ShowCaption="False" Caption="Autod3dd2b02-35e3-46b2-80d0-601ade90f770(15)" Index="2" RelativeSize="24.820659971305595">
+                    <LayoutItem Id="FechaCita" ViewItem="FechaCita" Index="0" RelativeSize="50" />
+                    <LayoutItem Id="HoraCita" ViewItem="HoraCita" Index="1" RelativeSize="50" />
+                  </LayoutGroup>
+                  <LayoutItem Id="Alta" ViewItem="Alta" Index="3" RelativeSize="24.820659971305595" />
+                </LayoutGroup>
+                <LayoutItem Id="Item1" Index="2" RelativeSize="74.152542372881356" />
+              </LayoutGroup>
+              <LayoutGroup Id="ClinicaA_01_col1" Index="1" RelativeSize="0.14306151645207441" Caption="ClinicaA_01_col1">
+                <LayoutItem Id="Apellido1" RelativeSize="66.549912434325748" Index="0" Removed="True" />
+                <LayoutItem Id="Apellido2" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="Visitas" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="Dni" Removed="True" />
+                <LayoutItem Id="Nombre" RelativeSize="33.274956217162874" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="ClinicaA_01_col2" Index="2" RelativeSize="0.14306151645207441" Caption="ClinicaA_01_col2">
+                <LayoutItem Id="HoraCita" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="Alta" RelativeSize="90.476190476190482" Removed="True" />
+                <LayoutItem Id="FechaCita" Removed="True" />
+                <LayoutItem Id="FechaNacimiento" RelativeSize="94.5578231292517" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ClinicaA_01_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Dni" Index="0" />
+        <ColumnInfo Id="Nombre" Index="1" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ClinicaA_02_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="Apellido2" Removed="True" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="ClinicaA_02" RelativeSize="100" Direction="Horizontal">
+              <LayoutGroup Id="ClinicaA_02_col1" RelativeSize="99.8567335243553" Caption="ClinicaA_02_col1">
+                <LayoutGroup Id="Auto8b871ae4-25dc-4fca-94ac-dc7a5eaed25b" ShowCaption="False" Caption="Auto8b871ae4-25dc-4fca-94ac-dc7a5eaed25b(5)" Direction="Horizontal" Index="0" RelativeSize="6.1295971978984234">
+                  <LayoutItem Id="Oid" ViewItem="Oid" Index="0" RelativeSize="25.538020086083215" />
+                  <LayoutItem Id="Dni" ViewItem="Dni" Index="1" RelativeSize="24.820659971305595" />
+                  <LayoutItem Id="Nombre" ViewItem="Nombre" Index="2" RelativeSize="24.820659971305595" />
+                  <LayoutItem Id="Apellido1" ViewItem="Apellido1" Index="3" RelativeSize="24.820659971305595" />
+                </LayoutGroup>
+                <LayoutItem Id="Apellido1" Index="1" RelativeSize="4.2031523642732047" Removed="True" />
+                <LayoutGroup Id="Autoae89976f-8b8f-40cf-a506-28514e8770bc" ShowCaption="False" Caption="Autoae89976f-8b8f-40cf-a506-28514e8770bc(11)" Direction="Horizontal" Index="1" RelativeSize="93.87040280210158">
+                  <LayoutItem Id="FechaNacimiento" ViewItem="FechaNacimiento" Index="0" RelativeSize="25.538020086083215" />
+                  <LayoutItem Id="Visitas" ViewItem="Visitas" Index="1" RelativeSize="24.820659971305595" />
+                  <LayoutGroup Id="Auto72c4897f-bbcb-4433-b24d-194717921284" ShowCaption="False" Caption="Auto72c4897f-bbcb-4433-b24d-194717921284(13)" Index="2" RelativeSize="24.820659971305595">
+                    <LayoutItem Id="FechaCita" ViewItem="FechaCita" Index="0" RelativeSize="5.5970149253731343" />
+                    <LayoutItem Id="HoraCita" ViewItem="HoraCita" Index="1" RelativeSize="94.402985074626869" />
+                  </LayoutGroup>
+                  <LayoutItem Id="Alta" ViewItem="Alta" Index="3" RelativeSize="24.820659971305595" />
+                </LayoutGroup>
+                <LayoutItem Id="Apellido2" Index="2" RelativeSize="90.192644483362528" Removed="True" />
+                <LayoutItem Id="Visitas" Index="2" RelativeSize="83.887915936952709" Removed="True" />
+                <LayoutItem Id="Dni" Removed="True" />
+                <LayoutItem Id="Nombre" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="ClinicaA_02_col2" ShowCaption="False" Index="1" RelativeSize="0.14326647564469913" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ClinicaA_02_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Dni" Index="0" />
+        <ColumnInfo Id="Nombre" Index="1" Width="289" />
+      </Columns>
+    </ListView>
+    <DetailView Id="PeluqueriaGon_01_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="PeluqueriaGon_01" RelativeSize="100">
+              <LayoutGroup Id="PeluqueriaGon_01_col1" RelativeSize="71.471471471471474" Caption="PeluqueriaGon_01_col1" Direction="Vertical">
+                <LayoutGroup Id="Autoaa8e000e-7072-4fc9-a2d1-804ae87f5e48" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="5.4421768707482991">
+                  <LayoutItem Id="Oid" ViewItem="Oid" Index="0" RelativeSize="34.87394957983193" />
+                  <LayoutItem Id="Dni" ViewItem="Dni" Index="1" RelativeSize="32.563025210084035" />
+                  <LayoutItem Id="Nombre" ViewItem="Nombre" Index="2" RelativeSize="32.563025210084035" />
+                </LayoutGroup>
+                <LayoutItem Id="Apellido1" RelativeSize="4.0816326530612246" Index="1" Removed="True" />
+                <LayoutItem Id="Apellido2" RelativeSize="4.0816326530612246" Index="1" Removed="True" />
+                <LayoutItem Id="FechaCita" ViewItem="FechaCita" Index="1" RelativeSize="4.0816326530612246" />
+                <LayoutItem Id="HoraCita" ViewItem="HoraCita" Index="2" RelativeSize="90.476190476190482" />
+                <LayoutItem Id="Comensales" RelativeSize="86.394557823129247" Index="3" Removed="True" />
+                <LayoutItem Id="Dni" Removed="True" />
+                <LayoutItem Id="Nombre" RelativeSize="4.0816326530612246" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="PeluqueriaGon_01_col2" RelativeSize="28.528528528528529" Direction="Vertical">
+                <LayoutItem Id="Apellido1" ViewItem="Apellido1" Index="0" RelativeSize="5.4421768707482991" />
+                <LayoutItem Id="Apellido2" ViewItem="Apellido2" Index="1" RelativeSize="4.0816326530612246" />
+                <LayoutItem Id="Servicio" ViewItem="Servicio" Index="2" RelativeSize="4.0816326530612246" Removed="True" />
+                <LayoutItem Id="Finalizado" ViewItem="Finalizado" Index="3" RelativeSize="86.394557823129247" Removed="True" />
+                <LayoutItem Id="FechaCita" RelativeSize="5.4421768707482991" Removed="True" />
+                <LayoutItem Id="HoraCita" RelativeSize="4.0816326530612246" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RestauranteEnr_01_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="RestauranteEnr_01" RelativeSize="100">
+              <LayoutGroup Id="RestauranteEnr_01_col1" RelativeSize="99.549549549549553" Caption="RestauranteEnr_01_col1" Direction="Horizontal">
+                <LayoutGroup Id="Auto04cf0f24-0dd8-47c8-a459-26afea4001f4" ShowCaption="False" Caption="Auto04cf0f24-0dd8-47c8-a459-26afea4001f4(5)" Index="0" RelativeSize="23.680241327300152">
+                  <LayoutItem Id="Oid" ViewItem="Oid" Index="0" RelativeSize="5.4421768707482991" />
+                  <LayoutItem Id="FechaReserva" ViewItem="FechaReserva" Index="1" RelativeSize="4.0816326530612246" />
+                  <LayoutItem Id="HoraReserva" ViewItem="HoraReserva" Index="2" RelativeSize="4.0816326530612246" SizeConstraintsType="Default" MinSize="157, 532" MaxSize="157, 532" />
+                  <LayoutItem Id="Item1" Index="3" RelativeSize="86.394557823129247" />
+                </LayoutGroup>
+                <LayoutGroup Id="Autoebb3f3b4-042e-439f-8be1-d64c443c9d5a" ShowCaption="False" Caption="Autoebb3f3b4-042e-439f-8be1-d64c443c9d5a(8)" Index="1" RelativeSize="76.319758672699848">
+                  <LayoutGroup Id="Auto4381d6ab-d5c2-4552-aeab-e61db42f919d" ShowCaption="False" Caption="Auto4381d6ab-d5c2-4552-aeab-e61db42f919d(9)" Direction="Horizontal" Index="0" RelativeSize="14.625850340136054">
+                    <LayoutGroup Id="Auto384cbff4-a624-48da-8db2-1f232c8b5788" ShowCaption="False" Caption="Auto384cbff4-a624-48da-8db2-1f232c8b5788(11)" Index="0" RelativeSize="60.079051383399211">
+                      <LayoutGroup Id="Auto0ea41c84-9c39-4b00-aa04-a5fd470f657d" ShowCaption="False" Caption="Auto0ea41c84-9c39-4b00-aa04-a5fd470f657d(12)" Direction="Horizontal" Index="0" RelativeSize="44.186046511627907">
+                        <LayoutItem Id="Dni" ViewItem="Dni" Index="0" RelativeSize="50" />
+                        <LayoutItem Id="Nombre" ViewItem="Nombre" Index="1" RelativeSize="50" />
+                      </LayoutGroup>
+                      <LayoutItem Id="Comensales" ViewItem="Comensales" Index="1" RelativeSize="55.813953488372093" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto6517425f-1ba9-4b3e-8ebb-58be96eeba22" ShowCaption="False" Caption="Auto6517425f-1ba9-4b3e-8ebb-58be96eeba22(12)" Index="1" RelativeSize="39.920948616600789">
+                      <LayoutItem Id="Apellido1" ViewItem="Apellido1" Index="0" RelativeSize="37.2093023255814" />
+                      <LayoutItem Id="Apellido2" ViewItem="Apellido2" Index="1" RelativeSize="27.906976744186046" />
+                      <LayoutItem Id="Recogido" ViewItem="Recogido" Index="2" RelativeSize="34.883720930232556" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto66288ec3-5e81-4fc8-b5a0-237ae27b9c42" ShowCaption="False" Caption="Auto66288ec3-5e81-4fc8-b5a0-237ae27b9c42(15)" Direction="Vertical" Index="1" RelativeSize="85.374149659863946">
+                    <LayoutItem Id="Item2" Index="0" RelativeSize="100" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="Dni" ViewItem="Dni" Index="1" RelativeSize="19.869281045751634" Removed="True" />
+                <LayoutItem Id="Apellido2" RelativeSize="19.869281045751634" Index="2" Removed="True" />
+                <LayoutItem Id="Nombre" ViewItem="Nombre" Index="2" RelativeSize="19.869281045751634" Removed="True" />
+                <LayoutItem Id="Apellido1" ViewItem="Apellido1" Index="3" RelativeSize="19.869281045751634" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="RestauranteEnr_01_col2" RelativeSize="0.45045045045045046" Caption="RestauranteEnr_01_col2">
+                <LayoutItem Id="FechaReserva" RelativeSize="5.6042031523642732" Index="0" Removed="True" />
+                <LayoutItem Id="Recogido" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="HoraReserva" RelativeSize="4.2031523642732047" Index="1" Removed="True" />
+                <LayoutItem Id="Comensales" RelativeSize="5.6042031523642732" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RestauranteEnr_02_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="RestauranteEnr_02" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="Autoc5b13088-51a1-494f-9139-014fe667e0a6" ShowCaption="False" Caption="Autoc5b13088-51a1-494f-9139-014fe667e0a6(4)" Direction="Horizontal" Index="0" RelativeSize="14.625850340136054">
+                <LayoutGroup Id="RestauranteEnr_02_col1" ShowCaption="False" Direction="Horizontal" Index="0" RelativeSize="76.426426426426431">
+                  <LayoutGroup Id="Auto982ef994-46d6-41a8-a673-06fe5e3bf06f" ShowCaption="False" Caption="Auto982ef994-46d6-41a8-a673-06fe5e3bf06f(5)" Index="0" RelativeSize="40.078585461689585">
+                    <LayoutItem Id="Oid" ViewItem="Oid" Index="0" RelativeSize="37.2093023255814" />
+                    <LayoutItem Id="FechaReserva" ViewItem="FechaReserva" Index="1" RelativeSize="27.906976744186046" />
+                    <LayoutItem Id="HoraReserva" ViewItem="HoraReserva" Index="2" RelativeSize="34.883720930232556" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Autoa8b0393d-130c-4a34-a3b9-89475cff465c" ShowCaption="False" Caption="Autoa8b0393d-130c-4a34-a3b9-89475cff465c(9)" Index="1" RelativeSize="59.921414538310415">
+                    <LayoutGroup Id="Autoecb161e0-e134-4d50-b274-37412fe6d2a1" ShowCaption="False" Caption="Autoecb161e0-e134-4d50-b274-37412fe6d2a1(10)" Direction="Horizontal" Index="0" RelativeSize="44.186046511627907">
+                      <LayoutItem Id="Dni" ViewItem="Dni" Index="0" RelativeSize="49.83606557377049" />
+                      <LayoutItem Id="Nombre" ViewItem="Nombre" Index="1" RelativeSize="50.16393442622951" />
+                    </LayoutGroup>
+                    <LayoutItem Id="Comensales" ViewItem="Comensales" Index="1" RelativeSize="55.813953488372093" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="RestauranteEnr_02_col2" ShowCaption="False" Index="1" RelativeSize="23.573573573573572">
+                  <LayoutGroup Id="Autocb3f53c9-9e4a-403f-af9c-1a6143994629" ShowCaption="False" Caption="Autocb3f53c9-9e4a-403f-af9c-1a6143994629(13)" Index="0" RelativeSize="100">
+                    <LayoutGroup Id="Auto33844d1c-fde0-4024-8eb2-fd442c6104f8" ShowCaption="False" Caption="Auto33844d1c-fde0-4024-8eb2-fd442c6104f8(14)" Index="0" RelativeSize="100">
+                      <LayoutGroup Id="Auto8060a886-0bcd-4e0d-82e0-86ae97cbef8d" ShowCaption="False" Caption="Auto8060a886-0bcd-4e0d-82e0-86ae97cbef8d(15)" Index="0" RelativeSize="100">
+                        <LayoutGroup Id="Auto211129e8-0816-4a1b-9948-3b7ed9e5f1a2" ShowCaption="False" Caption="Auto211129e8-0816-4a1b-9948-3b7ed9e5f1a2(17)" Index="0" RelativeSize="100">
+                          <LayoutItem Id="Apellido1" ViewItem="Apellido1" Index="0" RelativeSize="37.2093023255814" />
+                          <LayoutItem Id="Apellido2" ViewItem="Apellido2" Index="1" RelativeSize="27.906976744186046" />
+                          <LayoutItem Id="Recogido" ViewItem="Recogido" Index="2" RelativeSize="34.883720930232556" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Auto85da0e74-da89-45d8-914a-2689f74d5ed9" ShowCaption="False" Caption="Auto85da0e74-da89-45d8-914a-2689f74d5ed9(22)" Direction="Horizontal" Index="1" RelativeSize="85.374149659863946" />
+              <LayoutGroup Id="RestauranteEnr_02_col1" RelativeSize="79.6103896103896" Caption="RestauranteEnr_02_col1" Direction="Horizontal" Removed="True">
+                <LayoutGroup Id="Auto982ef994-46d6-41a8-a673-06fe5e3bf06f" ShowCaption="False" Caption="Auto982ef994-46d6-41a8-a673-06fe5e3bf06f(5)" Index="0" RelativeSize="50.407830342577491">
+                  <LayoutItem Id="Oid" ViewItem="Oid" Index="0" RelativeSize="5.6042031523642732" />
+                  <LayoutItem Id="FechaReserva" ViewItem="FechaReserva" Index="1" RelativeSize="4.2031523642732047" />
+                  <LayoutGroup Id="Auto68f973a0-bc38-45ac-8366-6a532763ce36" ShowCaption="False" Caption="" Direction="Horizontal" Index="2" RelativeSize="90.192644483362528">
+                    <LayoutItem Id="Recogido" ViewItem="Recogido" Index="0" RelativeSize="50.809061488673137" />
+                    <LayoutItem Id="HoraReserva" ViewItem="HoraReserva" Index="1" RelativeSize="49.190938511326863" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="Apellido1" RelativeSize="4.0816326530612246" Index="1" Removed="True" />
+                <LayoutItem Id="Apellido2" RelativeSize="94.395796847635722" Index="1" Removed="True" />
+                <LayoutGroup Id="Autoa8b0393d-130c-4a34-a3b9-89475cff465c" ShowCaption="False" Caption="Autoa8b0393d-130c-4a34-a3b9-89475cff465c(9)" Index="1" RelativeSize="49.592169657422509">
+                  <LayoutGroup Id="Autoecb161e0-e134-4d50-b274-37412fe6d2a1" ShowCaption="False" Caption="Autoecb161e0-e134-4d50-b274-37412fe6d2a1(10)" Direction="Horizontal" Index="0" RelativeSize="6.6549912434325744">
+                    <LayoutItem Id="Dni" ViewItem="Dni" Index="0" RelativeSize="50" />
+                    <LayoutItem Id="Nombre" ViewItem="Nombre" Index="1" RelativeSize="50" />
+                  </LayoutGroup>
+                  <LayoutItem Id="Comensales" ViewItem="Comensales" Index="1" RelativeSize="93.345008756567424" />
+                </LayoutGroup>
+                <LayoutItem Id="Dni" ViewItem="Dni" Index="1" RelativeSize="49.190938511326863" Removed="True" />
+                <LayoutItem Id="Nombre" RelativeSize="4.0816326530612246" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="RestauranteEnr_02_col2" RelativeSize="20.38961038961039" Caption="RestauranteEnr_02_col2" Removed="True">
+                <LayoutGroup Id="Autocb3f53c9-9e4a-403f-af9c-1a6143994629" ShowCaption="False" Caption="Autocb3f53c9-9e4a-403f-af9c-1a6143994629(13)" Direction="Vertical" Index="0" RelativeSize="100">
+                  <LayoutGroup Id="Auto33844d1c-fde0-4024-8eb2-fd442c6104f8" ShowCaption="False" Caption="Auto33844d1c-fde0-4024-8eb2-fd442c6104f8(14)" Direction="Vertical" Index="0" RelativeSize="100">
+                    <LayoutGroup Id="Auto8060a886-0bcd-4e0d-82e0-86ae97cbef8d" ShowCaption="False" Caption="Auto8060a886-0bcd-4e0d-82e0-86ae97cbef8d(15)" Index="0" RelativeSize="100" Direction="Vertical">
+                      <LayoutGroup Id="Auto211129e8-0816-4a1b-9948-3b7ed9e5f1a2" ShowCaption="False" Caption="Auto211129e8-0816-4a1b-9948-3b7ed9e5f1a2(17)" Index="0" RelativeSize="100">
+                        <LayoutItem Id="Apellido1" ViewItem="Apellido1" Index="0" RelativeSize="5.6042031523642732" />
+                        <LayoutItem Id="Apellido2" ViewItem="Apellido2" Index="1" RelativeSize="94.395796847635722" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="HoraReserva" RelativeSize="4.2031523642732047" Index="1" Removed="True" />
+                <LayoutItem Id="Recogido" RelativeSize="90.476190476190482" Index="1" Removed="True" />
+                <LayoutItem Id="Comensales" RelativeSize="5.4421768707482991" Removed="True" />
+                <LayoutItem Id="FechaReserva" RelativeSize="4.2031523642732047" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Negocios_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Negocios">
+              <LayoutGroup Id="Negocios_col2">
+                <LayoutGroup Id="Auto80ef8ab7-605b-45d7-bdc0-2e0a53571bc2">
+                  <LayoutItem Id="Ubicacion" ViewItem="Ubicacion" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="citaJuegos_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="50.943396226415096">
+            <LayoutGroup Id="citaJuegos" Caption="citaJuegos" RelativeSize="14.074074074074074">
+              <LayoutItem Id="juegos" RelativeSize="100" />
+              <LayoutItem Id="partidaFinalizada" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="CitaBase" RelativeSize="41.851851851851855">
+              <LayoutGroup Id="CitaBase_col1" RelativeSize="50">
+                <LayoutItem Id="Sucursal" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Dni" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Nombre" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="CitaBase_col2" RelativeSize="50">
+                <LayoutItem Id="Apellido1" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Apellido2" RelativeSize="63.636363636363633" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Event" RelativeSize="44.074074074074076">
+              <LayoutGroup Id="Event_col1" RelativeSize="50">
+                <LayoutItem Id="Subject" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="StartOn" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="EndOn" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="AllDay" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Event_col2" RelativeSize="50" Caption="Event_col2">
+                <LayoutItem Id="AlarmTime" ViewItem="AlarmTime" Index="0" RelativeSize="100" />
+                <LayoutItem Id="Label" RelativeSize="36.363636363636367" Index="0" Removed="True" />
+                <LayoutItem Id="Status" RelativeSize="63.636363636363633" Index="1" Removed="True" />
+                <LayoutItem Id="RecurrencePattern" RelativeSize="50" Index="2" Removed="True" />
+                <LayoutItem Id="Location" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="24.150943396226417" Caption="SizeableEditors">
+            <LayoutItem Id="RecurrenceInfoXml" RelativeSize="100" Index="0" Removed="True" />
+            <LayoutItem Id="Description" RelativeSize="49.723756906077348" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Resources_Group" Direction="Vertical" RelativeSize="24.90566037735849">
+            <LayoutItem Id="Resources" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CitaPeluqueria_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="CitaPeluqueria">
+              <LayoutItem Id="ServicioRealizado" RelativeSize="48.387096774193552" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Negocios_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Negocios">
+              <LayoutGroup Id="Negocios_col2">
+                <LayoutGroup Id="Auto80ef8ab7-605b-45d7-bdc0-2e0a53571bc2">
+                  <LayoutItem Id="Ubicacion" ViewItem="Ubicacion" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

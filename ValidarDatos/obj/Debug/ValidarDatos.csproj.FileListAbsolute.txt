@@ -1,0 +1,6 @@
+D:\Marcos_Rico\Agenda\AgendaCitas\ValidarDatos\bin\Debug\ValidarDatos.dll
+D:\Marcos_Rico\Agenda\AgendaCitas\ValidarDatos\bin\Debug\ValidarDatos.pdb
+D:\Marcos_Rico\Agenda\AgendaCitas\ValidarDatos\obj\Debug\ValidarDatos.csprojAssemblyReference.cache
+D:\Marcos_Rico\Agenda\AgendaCitas\ValidarDatos\obj\Debug\ValidarDatos.csproj.CoreCompileInputs.cache
+D:\Marcos_Rico\Agenda\AgendaCitas\ValidarDatos\obj\Debug\ValidarDatos.dll
+D:\Marcos_Rico\Agenda\AgendaCitas\ValidarDatos\obj\Debug\ValidarDatos.pdb

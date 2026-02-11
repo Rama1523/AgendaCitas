@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="AgendaCitas">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Agenda">
+        <Items>
+          <Item Id="CitaBase_ListView" Index="0" />
+          <Item Id="@ea594e6d-1fc4-44e6-98cd-969ed5c4cc15" Caption="Calendario" Visible="True" Index="1" ViewId="Calendario" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="21.2.4.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="21.2.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="21.2.4.0" IsNewNode="True" />
+  </SchemaModules>
+  <Validation>
+    <Rules>
+      <RuleRequiredField Id="DevExpress.Persistent.Validation.RuleRequiredField_AgendaCitas.Module.BusinessObjects.Agenda.Negocios_Fecha" MessageTemplateMustNotBeEmpty="&quot;{TargetPropertyName}&quot; no debe estar vacio." />
+      <RuleRequiredField Id="DevExpress.Persistent.Validation.RuleRequiredField_AgendaCitas.Module.BusinessObjects.Agenda.Negocios_Negocio" MessageTemplateMustNotBeEmpty="&quot;{TargetPropertyName}&quot; no debe estar vacio." />
+      <RuleRequiredField Id="DevExpress.Persistent.Validation.RuleRequiredField_AgendaCitas.Module.BusinessObjects.Catalogo.CAT_Ambitos_Ambito" MessageTemplateMustNotBeEmpty="&quot;{TargetPropertyName}&quot; no debe estar vacio." />
+    </Rules>
+  </Validation>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <ListView Id="Calendario" ClassName="AgendaCitas.Module.BusinessObjects.Mi_Negocio.CitaBase" AllowEdit="False" AllowDelete="False" AllowLink="True" AllowNew="False" NewItemRowPosition="Bottom" Caption="Calendario" Criteria="" IsNewNode="True">
+      <Columns IsNewNode="True">
+        <ColumnInfo Id="AlarmTime" PropertyName="AlarmTime" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="AllDay" PropertyName="AllDay" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Description" PropertyName="Description" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="EndOn" PropertyName="EndOn" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="IsPostponed" PropertyName="IsPostponed" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Label" PropertyName="Label" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Location" PropertyName="Location" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="NotificationMessage" PropertyName="NotificationMessage" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Oid" PropertyName="Oid" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="RecurrenceInfoXml" PropertyName="RecurrenceInfoXml" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="RecurrencePattern" PropertyName="RecurrencePattern" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="ReminderTime" PropertyName="ReminderTime" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="StartOn" PropertyName="StartOn" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Status" PropertyName="Status" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Subject" PropertyName="Subject" SortIndex="0" SortOrder="Ascending" Index="0" IsNewNode="True" />
+        <ColumnInfo Id="Sucursal" PropertyName="Sucursal" Index="1" IsNewNode="True" />
+        <ColumnInfo Id="Dni" PropertyName="Dni" Index="2" IsNewNode="True" />
+        <ColumnInfo Id="Nombre" PropertyName="Nombre" Index="3" IsNewNode="True" />
+        <ColumnInfo Id="Apellido1" PropertyName="Apellido1" Index="4" IsNewNode="True" />
+        <ColumnInfo Id="Apellido2" PropertyName="Apellido2" Index="5" IsNewNode="True" />
+      </Columns>
+      <PivotSettings AddNewColumns="False" IsNewNode="True" />
+    </ListView>
+    <DetailView Id="CAT_Ambitos_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="CAT_Ambitos" Direction="Vertical" RelativeSize="100" Caption="CAT_Ambitos">
+              <LayoutGroup Id="Auto65e7c780-7a92-4732-8b49-508231d01444" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="6.0377358490566042" IsNewNode="True">
+                <LayoutItem Id="Ambito" ViewItem="Ambito" Index="0" RelativeSize="50" IsNewNode="True" />
+                <LayoutItem Id="Visible" ViewItem="Visible" Index="1" RelativeSize="50" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Visible" RelativeSize="6.0377358490566042" Index="0" Removed="True" />
+              <LayoutItem Id="Item1" Index="1" RelativeSize="93.9622641509434" IsNewNode="True" />
+              <LayoutItem Id="Ambito" RelativeSize="50" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CitaBase_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="45.283018867924525">
+            <LayoutGroup Id="CitaBase" RelativeSize="50.416666666666664">
+              <LayoutGroup Id="CitaBase_col1" RelativeSize="50">
+                <LayoutItem Id="Sucursal" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Dni" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Nombre" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="CitaBase_col2" RelativeSize="50">
+                <LayoutItem Id="Apellido1" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Apellido2" RelativeSize="63.636363636363633" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Event" RelativeSize="49.583333333333336">
+              <LayoutGroup Id="Event_col1" RelativeSize="50">
+                <LayoutItem Id="Subject" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="StartOn" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="EndOn" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="AllDay" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Event_col2" RelativeSize="50" Caption="Event_col2">
+                <LayoutItem Id="AlarmTime" ViewItem="AlarmTime" Index="0" RelativeSize="100" IsNewNode="True" />
+                <LayoutItem Id="Label" RelativeSize="36.363636363636367" Index="0" Removed="True" />
+                <LayoutItem Id="Status" RelativeSize="27.272727272727273" Index="1" Removed="True" />
+                <LayoutItem Id="Location" RelativeSize="36.363636363636367" Removed="True" />
+                <LayoutItem Id="RecurrencePattern" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" RelativeSize="29.245283018867923" Index="1">
+            <LayoutItem Id="RecurrenceInfoXml" Index="0" RelativeSize="100" Removed="True" />
+            <LayoutItem Id="Description" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Resources_Group" Direction="Vertical" RelativeSize="25.471698113207548" Index="2">
+            <LayoutItem Id="Resources" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="CitaBase_ListView">
+      <PivotSettings Settings="     &lt;property name=&quot;FormatString&quot;&gt;{0:G}&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ValueFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;{0:G}&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;3&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item5&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_IsPostponed&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;IsPostponed&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Is Postponed&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryType&quot;&gt;Count&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;GrandTotalCellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ValueFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;4&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item6&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_Label&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;Label&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Label&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;{0:N0}&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;GrandTotalCellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;{0:N0}&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ValueFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;{0:N0}&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item7&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_Location&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;Location&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Location&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryType&quot;&gt;Count&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;GrandTotalCellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ValueFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;6&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item8&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_NotificationMessage&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;NotificationMessage&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Notification Message&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryType&quot;&gt;Count&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;GrandTotalCellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ValueFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;7&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item9&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_Oid&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;Oid&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Oid&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryType&quot;&gt;Count&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;GrandTotalCellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ValueFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;8&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item10&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_RecurrenceInfoXml&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;RecurrenceInfoXml&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Recurrence&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryType&quot;&gt;Count&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;GrandTotalCellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ValueFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;9&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item11&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_RecurrencePattern.Subject&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;RecurrencePattern.Subject&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Recurrence Pattern.Subject&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryType&quot;&gt;Count&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;10&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item12&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowFilter&quot;&gt;False&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_ReminderTime.RemindInText&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;ReminderTime.RemindInText&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Reminder Time.Remind In&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryType&quot;&gt;Count&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;11&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item13&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_StartOn&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;GroupInterval&quot;&gt;Date&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;StartOn&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;UnboundFieldName&quot;&gt;Field_StartOn&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Start Date/Time&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryType&quot;&gt;Count&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;{0:G}&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;GrandTotalCellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;{0:G}&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ValueFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;{0:G}&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;12&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item14&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_Status&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;Status&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Status&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;{0:N0}&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;GrandTotalCellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;{0:N0}&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ValueFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;{0:N0}&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;13&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item15&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_Subject&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;Subject&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Subject&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryType&quot;&gt;Count&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;GrandTotalCellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ValueFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;14&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item16&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowFilter&quot;&gt;False&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_Sucursal.Sucursal&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;Sucursal.Sucursal&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Sucursal.Sucursal&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryType&quot;&gt;Count&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;15&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item17&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_Dni&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;Dni&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;DNI/Pasaporte&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryType&quot;&gt;Count&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;GrandTotalCellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ValueFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;16&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;2&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item18&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_Nombre&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;Nombre&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Nombre&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryType&quot;&gt;Count&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;GrandTotalCellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ValueFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;17&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;3&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item19&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_Apellido1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;Apellido1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Apellido 1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryType&quot;&gt;Count&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;GrandTotalCellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ValueFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;18&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;4&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item20&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;AllowRunTimeSummaryChange&quot;&gt;true&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ImageIndex&quot;&gt;-1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;Field_Apellido2&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;Apellido2&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Caption&quot;&gt;Apellido 2&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryType&quot;&gt;Count&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;GrandTotalCellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ValueFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Custom&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;19&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;MinWidth&quot;&gt;20&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;100&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;Prefilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Criteria&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;    &lt;property name=&quot;ShowOperandTypeIcon&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Enabled&quot;&gt;false&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;OptionsCustomization&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;CustomizationFormStyle&quot;&gt;Excel2007&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;OptionsChartDataSource&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;DataProvideMode&quot;&gt;UseCustomSettings&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;OptionsFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;DefaultFilterEditorView&quot;&gt;VisualAndText&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;FixedLineWidth&quot;&gt;2&lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;Groups&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;  &lt;property name=&quot;FormatRules&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;  &lt;property name=&quot;FormatConditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;&lt;/XtraSerializer&gt;" />
+    </ListView>
+    <DetailView Id="CitaDeportes_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="50.556438791732909">
+            <LayoutGroup Id="CitaDeportes" RelativeSize="27.044025157232703">
+              <LayoutItem Id="Negocio" RelativeSize="37.2093023255814" />
+              <LayoutItem Id="HorasReservadas" RelativeSize="27.906976744186046" />
+              <LayoutItem Id="Principiante" RelativeSize="34.883720930232556" />
+            </LayoutGroup>
+            <LayoutGroup Id="CitaBase" RelativeSize="35.534591194968556">
+              <LayoutGroup Id="CitaBase_col1" RelativeSize="50">
+                <LayoutItem Id="Sucursal" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Dni" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Nombre" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="CitaBase_col2" RelativeSize="50">
+                <LayoutItem Id="Apellido1" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Apellido2" RelativeSize="63.636363636363633" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Event" RelativeSize="37.421383647798741">
+              <LayoutGroup Id="Event_col1" RelativeSize="50">
+                <LayoutItem Id="Subject" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="StartOn" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="EndOn" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="AllDay" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Event_col2" RelativeSize="50" Caption="Event_col2">
+                <LayoutItem Id="AlarmTime" ViewItem="AlarmTime" Index="0" RelativeSize="100" IsNewNode="True" />
+                <LayoutItem Id="Label" RelativeSize="71.428571428571431" Removed="True" />
+                <LayoutItem Id="Location" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="RecurrencePattern" RelativeSize="28.571428571428573" Removed="True" />
+                <LayoutItem Id="Status" RelativeSize="50" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" RelativeSize="24.6422893481717">
+            <LayoutItem Id="RecurrenceInfoXml" Index="0" RelativeSize="100" Removed="True" />
+            <LayoutItem Id="Description" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Resources_Group" Direction="Vertical" RelativeSize="24.80127186009539">
+            <LayoutItem Id="Resources" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CitaJuego_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="50.556438791732909">
+            <LayoutGroup Id="CitaJuego" RelativeSize="27.044025157232703">
+              <LayoutItem Id="Negocio" RelativeSize="37.2093023255814" />
+              <LayoutItem Id="Juegos" RelativeSize="27.906976744186046" />
+              <LayoutItem Id="HorasReservadas" RelativeSize="34.883720930232556" />
+            </LayoutGroup>
+            <LayoutGroup Id="CitaBase" RelativeSize="35.534591194968556">
+              <LayoutGroup Id="CitaBase_col1" RelativeSize="50">
+                <LayoutItem Id="Sucursal" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Dni" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Nombre" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="CitaBase_col2" RelativeSize="50">
+                <LayoutItem Id="Apellido1" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Apellido2" RelativeSize="63.636363636363633" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Event" RelativeSize="37.421383647798741">
+              <LayoutGroup Id="Event_col1" RelativeSize="50">
+                <LayoutItem Id="Subject" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="StartOn" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="EndOn" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="AllDay" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Event_col2" RelativeSize="50" Caption="Event_col2">
+                <LayoutItem Id="AlarmTime" ViewItem="AlarmTime" Index="0" RelativeSize="100" IsNewNode="True" />
+                <LayoutItem Id="Label" Index="0" RelativeSize="28.571428571428573" Removed="True" />
+                <LayoutItem Id="RecurrencePattern" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="Status" Index="0" RelativeSize="28.571428571428573" Removed="True" />
+                <LayoutItem Id="Location" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="24.6422893481717" Caption="SizeableEditors">
+            <LayoutItem Id="RecurrenceInfoXml" RelativeSize="100" Index="0" Removed="True" />
+            <LayoutItem Id="Description" RelativeSize="49.681528662420384" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Resources_Group" Direction="Vertical" RelativeSize="24.80127186009539">
+            <LayoutItem Id="Resources" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CitaMedica_DetailView">
+      <Items>
+        <PropertyEditor Id="Sucursal" DataSourcePropertyIsNullMode="CustomCriteria" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="43.39622641509434">
+            <LayoutGroup Id="CitaMedica" RelativeSize="0.43478260869565216" Caption="CitaMedica">
+              <LayoutItem Id="Alta" RelativeSize="100" Index="0" Removed="True" />
+              <LayoutItem Id="Visitas" RelativeSize="51.612903225806448" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="CitaBase" RelativeSize="49.130434782608695">
+              <LayoutGroup Id="CitaBase_col1" RelativeSize="50">
+                <LayoutItem Id="Sucursal" RelativeSize="36.363636363636367" SizeConstraintsType="Default" />
+                <LayoutItem Id="Dni" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Nombre" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="CitaBase_col2" RelativeSize="50">
+                <LayoutItem Id="Apellido1" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Apellido2" RelativeSize="63.636363636363633" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Event" RelativeSize="50.434782608695649">
+              <LayoutGroup Id="Event_col1" RelativeSize="50">
+                <LayoutItem Id="Subject" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="StartOn" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="EndOn" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="AllDay" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Event_col2" RelativeSize="50" Caption="Event_col2">
+                <LayoutItem Id="AlarmTime" ViewItem="AlarmTime" Index="0" RelativeSize="100" IsNewNode="True" />
+                <LayoutItem Id="Label" RelativeSize="36.363636363636367" Index="0" Removed="True" />
+                <LayoutItem Id="Location" RelativeSize="36.363636363636367" Removed="True" />
+                <LayoutItem Id="RecurrencePattern" RelativeSize="28.571428571428573" Removed="True" />
+                <LayoutItem Id="Status" RelativeSize="36.363636363636367" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" RelativeSize="28.113207547169811">
+            <LayoutItem Id="Description" RelativeSize="100" />
+            <LayoutItem Id="RecurrenceInfoXml" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Resources_Group" Direction="Vertical" RelativeSize="28.490566037735849">
+            <LayoutItem Id="Resources" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CitaPeluqueria_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="50.943396226415096">
+            <LayoutGroup Id="CitaPeluqueria" RelativeSize="14.074074074074074" Caption="CitaPeluqueria">
+              <LayoutItem Id="Servicios" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="CitaBase" RelativeSize="41.851851851851855">
+              <LayoutGroup Id="CitaBase_col1" RelativeSize="50">
+                <LayoutItem Id="Sucursal" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Dni" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Nombre" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="CitaBase_col2" RelativeSize="50">
+                <LayoutItem Id="Apellido1" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Apellido2" RelativeSize="63.636363636363633" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Event" RelativeSize="44.074074074074076">
+              <LayoutGroup Id="Event_col1" RelativeSize="50">
+                <LayoutItem Id="Subject" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="StartOn" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="EndOn" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="AllDay" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Event_col2" RelativeSize="50" Caption="Event_col2">
+                <LayoutItem Id="AlarmTime" ViewItem="AlarmTime" Index="0" RelativeSize="100" IsNewNode="True" />
+                <LayoutItem Id="Label" RelativeSize="36.363636363636367" Index="0" Removed="True" />
+                <LayoutItem Id="Status" RelativeSize="71.428571428571431" Index="1" Removed="True" />
+                <LayoutItem Id="RecurrencePattern" RelativeSize="50" Index="2" Removed="True" />
+                <LayoutItem Id="Location" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" RelativeSize="24.339622641509433">
+            <LayoutItem Id="RecurrenceInfoXml" Index="0" RelativeSize="100" Removed="True" />
+            <LayoutItem Id="Description" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Resources_Group" Direction="Vertical" RelativeSize="24.716981132075471">
+            <LayoutItem Id="Resources" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CitaRestaurante_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="55.471698113207545">
+            <LayoutGroup Id="CitaRestaurante" RelativeSize="21.088435374149661">
+              <LayoutItem Id="Tipo" RelativeSize="51.612903225806448" />
+              <LayoutItem Id="Comensales" RelativeSize="48.387096774193552" />
+              <LayoutItem Id="Recogido" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="CitaBase" RelativeSize="38.435374149659864">
+              <LayoutGroup Id="CitaBase_col1" RelativeSize="50">
+                <LayoutItem Id="Sucursal" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Dni" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Nombre" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="CitaBase_col2" RelativeSize="50">
+                <LayoutItem Id="Apellido1" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Apellido2" RelativeSize="63.636363636363633" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Event" RelativeSize="40.476190476190474">
+              <LayoutGroup Id="Event_col1" RelativeSize="50">
+                <LayoutItem Id="Subject" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="StartOn" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="EndOn" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="AllDay" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Event_col2" RelativeSize="50" Caption="Event_col2">
+                <LayoutItem Id="AlarmTime" ViewItem="AlarmTime" Index="0" RelativeSize="100" IsNewNode="True" />
+                <LayoutItem Id="Label" RelativeSize="36.363636363636367" Index="0" Removed="True" />
+                <LayoutItem Id="Location" RelativeSize="36.363636363636367" Removed="True" />
+                <LayoutItem Id="RecurrencePattern" RelativeSize="28.571428571428573" Removed="True" />
+                <LayoutItem Id="Status" RelativeSize="36.363636363636367" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="20.377358490566039" Caption="SizeableEditors">
+            <LayoutItem Id="RecurrenceInfoXml" RelativeSize="100" Index="0" Removed="True" />
+            <LayoutItem Id="Description" RelativeSize="49.704142011834321" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Resources_Group" Direction="Vertical" RelativeSize="24.150943396226417">
+            <LayoutItem Id="Resources" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CitaTaller_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="50.556438791732909">
+            <LayoutGroup Id="CitaTaller" RelativeSize="19.49685534591195">
+              <LayoutItem Id="Negocio" RelativeSize="51.612903225806448" />
+              <LayoutItem Id="PrimeraRevision" RelativeSize="48.387096774193552" />
+            </LayoutGroup>
+            <LayoutGroup Id="CitaBase" RelativeSize="35.534591194968556">
+              <LayoutGroup Id="CitaBase_col1" RelativeSize="50">
+                <LayoutItem Id="Sucursal" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Dni" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Nombre" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="CitaBase_col2" RelativeSize="50">
+                <LayoutItem Id="Apellido1" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Apellido2" RelativeSize="63.636363636363633" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Event" RelativeSize="44.9685534591195">
+              <LayoutGroup Id="Event_col1" RelativeSize="50">
+                <LayoutItem Id="Subject" RelativeSize="28.571428571428573" />
+                <LayoutItem Id="StartOn" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="EndOn" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="AllDay" RelativeSize="28.571428571428573" />
+              </LayoutGroup>
+              <LayoutGroup Id="Event_col2" ShowCaption="False" Index="1" RelativeSize="50" Caption="Event_col2" IsNewNode="True" Removed="True">
+                <LayoutItem Id="AlarmTime" ViewItem="AlarmTime" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" RelativeSize="24.6422893481717">
+            <LayoutItem Id="Description" RelativeSize="100" Removed="True" />
+            <LayoutItem Id="RecurrenceInfoXml" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Resources_Group" Direction="Vertical" RelativeSize="24.80127186009539">
+            <LayoutItem Id="Resources" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CitaTecnologia_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="50.556438791732909">
+            <LayoutGroup Id="CitaTecnologia" RelativeSize="19.49685534591195">
+              <LayoutItem Id="Negocio" RelativeSize="51.612903225806448" />
+              <LayoutItem Id="PrimeraConsulta" RelativeSize="48.387096774193552" />
+            </LayoutGroup>
+            <LayoutGroup Id="CitaBase" RelativeSize="35.534591194968556">
+              <LayoutGroup Id="CitaBase_col1" RelativeSize="50">
+                <LayoutItem Id="Sucursal" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Dni" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Nombre" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="CitaBase_col2" RelativeSize="50">
+                <LayoutItem Id="Apellido1" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Apellido2" RelativeSize="63.636363636363633" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Event" RelativeSize="44.9685534591195">
+              <LayoutGroup Id="Event_col1" RelativeSize="50">
+                <LayoutItem Id="Subject" RelativeSize="28.571428571428573" />
+                <LayoutItem Id="StartOn" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="EndOn" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="AllDay" RelativeSize="28.571428571428573" />
+              </LayoutGroup>
+              <LayoutGroup Id="Event_col2" RelativeSize="50" Caption="Event_col2">
+                <LayoutItem Id="AlarmTime" ViewItem="AlarmTime" Index="0" RelativeSize="100" IsNewNode="True" />
+                <LayoutItem Id="Label" RelativeSize="71.428571428571431" Removed="True" />
+                <LayoutItem Id="Location" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="RecurrencePattern" RelativeSize="28.571428571428573" Removed="True" />
+                <LayoutItem Id="Status" RelativeSize="50" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" RelativeSize="24.6422893481717">
+            <LayoutItem Id="RecurrenceInfoXml" Index="0" RelativeSize="100" Removed="True" />
+            <LayoutItem Id="Description" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Resources_Group" Direction="Vertical" RelativeSize="24.80127186009539">
+            <LayoutItem Id="Resources" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Negocios_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Negocios" RelativeSize="19.713831478537362">
+              <LayoutGroup Id="Negocios_col1" RelativeSize="35.885885885885884" Caption="Negocios_col1" Direction="Vertical">
+                <LayoutGroup Id="Autob2cc90a9-f4d5-49f4-a8ce-f7881d6bed59" ShowCaption="False" Caption="Autob2cc90a9-f4d5-49f4-a8ce-f7881d6bed59(5)" Direction="Horizontal" Index="0" RelativeSize="41.758241758241759" IsNewNode="True">
+                  <LayoutItem Id="Oid" ViewItem="Oid" Index="0" RelativeSize="48.953974895397486" IsNewNode="True" />
+                  <LayoutItem Id="Negocio" ViewItem="Negocio" Index="1" RelativeSize="51.046025104602514" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Negocio" ViewItem="Negocio" Index="0" RelativeSize="49.849849849849846" Removed="True" />
+                <LayoutItem Id="Fecha" ViewItem="Fecha" Index="1" RelativeSize="58.241758241758241" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="Activo" Index="2" RelativeSize="34.042553191489361" ViewItem="Activo" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Negocios_col2" Caption="Negocios_col2" RelativeSize="64.114114114114116" Direction="Vertical">
+                <LayoutGroup Id="Auto80ef8ab7-605b-45d7-bdc0-2e0a53571bc2" ShowCaption="False" Caption="Auto80ef8ab7-605b-45d7-bdc0-2e0a53571bc2(12)" Direction="Vertical" Index="0" RelativeSize="72.527472527472526" IsNewNode="True">
+                  <LayoutItem Id="Cat_Ambito" ViewItem="Cat_Ambito" Index="0" RelativeSize="48.484848484848484" IsNewNode="True" />
+                  <LayoutItem Id="Horario" ViewItem="Horario" Index="1" RelativeSize="36.363636363636367" IsNewNode="True" />
+                  <LayoutItem Id="Ubicacion" ViewItem="Ubicacion" Index="2" RelativeSize="15.151515151515152" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Activo" ViewItem="Activo" Index="1" RelativeSize="26.373626373626372" IsNewNode="True" />
+                <LayoutItem Id="Horario" ViewItem="Horario" Index="1" RelativeSize="65.957446808510639" Removed="True" />
+                <LayoutGroup Id="Autof57183e0-cd3f-4709-9939-e171e400ffe7" ShowCaption="False" Caption="Autof57183e0-cd3f-4709-9939-e171e400ffe7(14)" Direction="Vertical" Index="2" RelativeSize="1.098901098901099" IsNewNode="True" />
+                <LayoutItem Id="Cat_Ambito" RelativeSize="26.588235294117649" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutItem Id="Ambito" Index="1" RelativeSize="1.589825119236884" IsNewNode="True" />
+            <LayoutGroup Id="XPObject" RelativeSize="78.69634340222575" Caption="Oid" Index="2">
+              <LayoutItem Id="Oid" RelativeSize="100" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Sucursales_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Sucursales" Direction="Vertical" RelativeSize="100" Caption="Sucursales">
+              <LayoutGroup Id="Auto4706e67c-d857-47a5-96f2-1287440045d3" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="5.0955414012738851" IsNewNode="True">
+                <LayoutItem Id="Oid" ViewItem="Oid" Index="0" RelativeSize="25" IsNewNode="True" />
+                <LayoutItem Id="Sucursal" ViewItem="Sucursal" Index="1" RelativeSize="25" IsNewNode="True" />
+                <LayoutItem Id="Ubicacion" ViewItem="Ubicacion" Index="2" RelativeSize="50" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Activo" ViewItem="Activo" Index="1" RelativeSize="3.8216560509554141" IsNewNode="True" Removed="True" />
+              <LayoutItem Id="Sucursal" ViewItem="Sucursal" Index="1" RelativeSize="25" Removed="True" />
+              <LayoutItem Id="Item1" Index="2" RelativeSize="91.0828025477707" IsNewNode="True" />
+              <LayoutItem Id="Ubicacion" ViewItem="Ubicacion" Index="2" RelativeSize="16.424418604651162" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

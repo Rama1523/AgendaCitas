@@ -1,1 +1,2 @@
-# AgendaCitas
+# AgendaCitas 
+Este proyecto desarrollado en C# con .NetFramework y DevExpress consiste en una Agenda de Citaciones para diversos Negocios de diferentes ámbitos, con este proyecto, lo que se quiere conseguir es facilitar tanto a negocios como a clientes el llevar su agenda y gestionarla de una manera sencilla
